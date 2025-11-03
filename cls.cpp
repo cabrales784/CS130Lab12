@@ -24,4 +24,8 @@ int main()
 {
     MyClass c1(5);
     c1.printout();
+
+    MyClass c2(c1);
+    std::cout << "-----COPY-----" << std::endl;
+    c2.printout();
 }
